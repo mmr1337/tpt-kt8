@@ -1,0 +1,6 @@
+<Project>
+  <ItemGroup>
+    <Compile Include="$(MSBuildThisFileDirectory)PetstoreCases.cs" Link="PetstoreCases.cs" />
+    <None Include="$(MSBuildThisFileDirectory)cases.json" Link="cases.json" CopyToOutputDirectory="PreserveNewest" />
+  </ItemGroup>
+</Project>

@@ -1,0 +1,708 @@
+[
+  {
+    "feature": "Pet",
+    "operation": "uploadFile",
+    "scenario": "positive",
+    "method": "POST",
+    "path": "pet/$id/uploadImage",
+    "status": [
+      200
+    ],
+    "upload": true,
+    "setup": {
+      "method": "POST",
+      "path": "pet",
+      "json": {
+        "id": "$id",
+        "name": "$name",
+        "photoUrls": [],
+        "status": "available"
+      }
+    },
+    "cleanup": "pet/$id",
+    "checks": {
+      "code": 200
+    }
+  },
+  {
+    "feature": "Pet",
+    "operation": "uploadFile",
+    "scenario": "negative",
+    "method": "POST",
+    "path": "pet/invalid-id/uploadImage",
+    "status": [
+      400,
+      404
+    ],
+    "upload": true
+  },
+  {
+    "feature": "Pet",
+    "operation": "addPet",
+    "scenario": "positive",
+    "method": "POST",
+    "path": "pet",
+    "status": [
+      200
+    ],
+    "json": {
+      "id": "$id",
+      "name": "$name",
+      "photoUrls": [],
+      "status": "available"
+    },
+    "cleanup": "pet/$id",
+    "checks": {
+      "id": "$id",
+      "name": "$name"
+    }
+  },
+  {
+    "feature": "Pet",
+    "operation": "addPet",
+    "scenario": "negative",
+    "method": "POST",
+    "path": "pet",
+    "status": [
+      400,
+      405
+    ],
+    "json": {
+      "id": "invalid-id",
+      "name": "$name",
+      "photoUrls": [],
+      "status": "available"
+    },
+    "cleanup": "pet/$id"
+  },
+  {
+    "feature": "Pet",
+    "operation": "updatePet",
+    "scenario": "positive",
+    "method": "PUT",
+    "path": "pet",
+    "status": [
+      200
+    ],
+    "json": {
+      "id": "$id",
+      "name": "$name",
+      "photoUrls": [],
+      "status": "pending"
+    },
+    "setup": {
+      "method": "POST",
+      "path": "pet",
+      "json": {
+        "id": "$id",
+        "name": "$name",
+        "photoUrls": [],
+        "status": "available"
+      }
+    },
+    "cleanup": "pet/$id",
+    "checks": {
+      "status": "pending"
+    }
+  },
+  {
+    "feature": "Pet",
+    "operation": "updatePet",
+    "scenario": "negative",
+    "method": "PUT",
+    "path": "pet",
+    "status": [
+      400,
+      405
+    ],
+    "json": {
+      "id": "invalid-id",
+      "name": "$name",
+      "photoUrls": [],
+      "status": "available"
+    },
+    "cleanup": "pet/$id"
+  },
+  {
+    "feature": "Pet",
+    "operation": "findPetsByStatus",
+    "scenario": "positive",
+    "method": "GET",
+    "path": "pet/findByStatus",
+    "status": [
+      200
+    ],
+    "query": {
+      "status": "available"
+    },
+    "kind": "available"
+  },
+  {
+    "feature": "Pet",
+    "operation": "findPetsByStatus",
+    "scenario": "negative",
+    "method": "GET",
+    "path": "pet/findByStatus",
+    "status": [
+      400
+    ],
+    "query": {
+      "status": "invalid-status"
+    }
+  },
+  {
+    "feature": "Pet",
+    "operation": "getPetById",
+    "scenario": "positive",
+    "method": "GET",
+    "path": "pet/$id",
+    "status": [
+      200
+    ],
+    "setup": {
+      "method": "POST",
+      "path": "pet",
+      "json": {
+        "id": "$id",
+        "name": "$name",
+        "photoUrls": [],
+        "status": "available"
+      }
+    },
+    "cleanup": "pet/$id",
+    "checks": {
+      "id": "$id"
+    }
+  },
+  {
+    "feature": "Pet",
+    "operation": "getPetById",
+    "scenario": "negative",
+    "method": "GET",
+    "path": "pet/$id",
+    "status": [
+      404
+    ]
+  },
+  {
+    "feature": "Pet",
+    "operation": "updatePetWithForm",
+    "scenario": "positive",
+    "method": "POST",
+    "path": "pet/$id",
+    "status": [
+      200
+    ],
+    "form": {
+      "name": "$name",
+      "status": "sold"
+    },
+    "follow": "pet/$id",
+    "setup": {
+      "method": "POST",
+      "path": "pet",
+      "json": {
+        "id": "$id",
+        "name": "$name",
+        "photoUrls": [],
+        "status": "available"
+      }
+    },
+    "cleanup": "pet/$id",
+    "checks": {
+      "status": "sold"
+    }
+  },
+  {
+    "feature": "Pet",
+    "operation": "updatePetWithForm",
+    "scenario": "negative",
+    "method": "POST",
+    "path": "pet/$id",
+    "status": [
+      400,
+      404,
+      405
+    ],
+    "form": {
+      "name": "$name"
+    }
+  },
+  {
+    "feature": "Pet",
+    "operation": "deletePet",
+    "scenario": "positive",
+    "method": "DELETE",
+    "path": "pet/$id",
+    "status": [
+      200
+    ],
+    "missing": "pet/$id",
+    "setup": {
+      "method": "POST",
+      "path": "pet",
+      "json": {
+        "id": "$id",
+        "name": "$name",
+        "photoUrls": [],
+        "status": "available"
+      }
+    },
+    "cleanup": "pet/$id"
+  },
+  {
+    "feature": "Pet",
+    "operation": "deletePet",
+    "scenario": "negative",
+    "method": "DELETE",
+    "path": "pet/invalid-id",
+    "status": [
+      400,
+      404
+    ]
+  },
+  {
+    "feature": "Store",
+    "operation": "getInventory",
+    "scenario": "positive",
+    "method": "GET",
+    "path": "store/inventory",
+    "status": [
+      200
+    ],
+    "kind": "inventory"
+  },
+  {
+    "feature": "Store",
+    "operation": "getInventory",
+    "scenario": "negative",
+    "method": "GET",
+    "path": "store/inventory",
+    "status": [
+      406
+    ],
+    "accept": "application/pdf"
+  },
+  {
+    "feature": "Store",
+    "operation": "placeOrder",
+    "scenario": "positive",
+    "method": "POST",
+    "path": "store/order",
+    "status": [
+      200
+    ],
+    "json": {
+      "id": "$id",
+      "petId": "$id",
+      "quantity": 1,
+      "status": "placed",
+      "complete": false
+    },
+    "cleanup": "store/order/$id",
+    "checks": {
+      "id": "$id",
+      "quantity": 1
+    }
+  },
+  {
+    "feature": "Store",
+    "operation": "placeOrder",
+    "scenario": "negative",
+    "method": "POST",
+    "path": "store/order",
+    "status": [
+      400
+    ],
+    "json": {
+      "id": "$id",
+      "petId": "$id",
+      "quantity": "invalid-quantity",
+      "status": "placed",
+      "complete": false
+    },
+    "cleanup": "store/order/$id"
+  },
+  {
+    "feature": "Store",
+    "operation": "getOrderById",
+    "scenario": "positive",
+    "method": "GET",
+    "path": "store/order/$id",
+    "status": [
+      200
+    ],
+    "setup": {
+      "method": "POST",
+      "path": "store/order",
+      "json": {
+        "id": "$id",
+        "petId": "$id",
+        "quantity": 1,
+        "status": "placed",
+        "complete": false
+      }
+    },
+    "cleanup": "store/order/$id",
+    "checks": {
+      "id": "$id"
+    }
+  },
+  {
+    "feature": "Store",
+    "operation": "getOrderById",
+    "scenario": "negative",
+    "method": "GET",
+    "path": "store/order/0",
+    "status": [
+      400,
+      404
+    ]
+  },
+  {
+    "feature": "Store",
+    "operation": "deleteOrder",
+    "scenario": "positive",
+    "method": "DELETE",
+    "path": "store/order/$id",
+    "status": [
+      200
+    ],
+    "missing": "store/order/$id",
+    "setup": {
+      "method": "POST",
+      "path": "store/order",
+      "json": {
+        "id": "$id",
+        "petId": "$id",
+        "quantity": 1,
+        "status": "placed",
+        "complete": false
+      }
+    },
+    "cleanup": "store/order/$id"
+  },
+  {
+    "feature": "Store",
+    "operation": "deleteOrder",
+    "scenario": "negative",
+    "method": "DELETE",
+    "path": "store/order/0",
+    "status": [
+      400,
+      404
+    ]
+  },
+  {
+    "feature": "User",
+    "operation": "createUsersWithListInput",
+    "scenario": "positive",
+    "method": "POST",
+    "path": "user/createWithList",
+    "status": [
+      200
+    ],
+    "json": [
+      {
+        "id": "$id",
+        "username": "$name",
+        "firstName": "Test",
+        "email": "$email",
+        "password": "course-example-42"
+      }
+    ],
+    "follow": "user/$name",
+    "cleanup": "user/$name",
+    "checks": {
+      "username": "$name"
+    }
+  },
+  {
+    "feature": "User",
+    "operation": "createUsersWithListInput",
+    "scenario": "negative",
+    "method": "POST",
+    "path": "user/createWithList",
+    "status": [
+      400,
+      405
+    ],
+    "json": {
+      "items": []
+    }
+  },
+  {
+    "feature": "User",
+    "operation": "createUsersWithArrayInput",
+    "scenario": "positive",
+    "method": "POST",
+    "path": "user/createWithArray",
+    "status": [
+      200
+    ],
+    "json": [
+      {
+        "id": "$id",
+        "username": "$name",
+        "firstName": "Test",
+        "email": "$email",
+        "password": "course-example-42"
+      }
+    ],
+    "follow": "user/$name",
+    "cleanup": "user/$name",
+    "checks": {
+      "username": "$name"
+    }
+  },
+  {
+    "feature": "User",
+    "operation": "createUsersWithArrayInput",
+    "scenario": "negative",
+    "method": "POST",
+    "path": "user/createWithArray",
+    "status": [
+      400,
+      405
+    ],
+    "json": {
+      "items": []
+    }
+  },
+  {
+    "feature": "User",
+    "operation": "getUserByName",
+    "scenario": "positive",
+    "method": "GET",
+    "path": "user/$name",
+    "status": [
+      200
+    ],
+    "setup": {
+      "method": "POST",
+      "path": "user",
+      "json": {
+        "id": "$id",
+        "username": "$name",
+        "firstName": "Test",
+        "email": "$email",
+        "password": "course-example-42"
+      }
+    },
+    "cleanup": "user/$name",
+    "checks": {
+      "username": "$name"
+    }
+  },
+  {
+    "feature": "User",
+    "operation": "getUserByName",
+    "scenario": "negative",
+    "method": "GET",
+    "path": "user/$name",
+    "status": [
+      404
+    ]
+  },
+  {
+    "feature": "User",
+    "operation": "updateUser",
+    "scenario": "positive",
+    "method": "PUT",
+    "path": "user/$name",
+    "status": [
+      200
+    ],
+    "json": {
+      "id": "$id",
+      "username": "$name",
+      "firstName": "Updated",
+      "email": "$email",
+      "password": "course-example-42"
+    },
+    "follow": "user/$name",
+    "setup": {
+      "method": "POST",
+      "path": "user",
+      "json": {
+        "id": "$id",
+        "username": "$name",
+        "firstName": "Test",
+        "email": "$email",
+        "password": "course-example-42"
+      }
+    },
+    "cleanup": "user/$name",
+    "checks": {
+      "firstName": "Updated"
+    }
+  },
+  {
+    "feature": "User",
+    "operation": "updateUser",
+    "scenario": "negative",
+    "method": "PUT",
+    "path": "user/$name",
+    "status": [
+      400,
+      405
+    ],
+    "json": {
+      "id": "invalid-id",
+      "username": "$name",
+      "firstName": "Test",
+      "email": "$email",
+      "password": "course-example-42"
+    },
+    "cleanup": "user/$name"
+  },
+  {
+    "feature": "User",
+    "operation": "deleteUser",
+    "scenario": "positive",
+    "method": "DELETE",
+    "path": "user/$name",
+    "status": [
+      200
+    ],
+    "missing": "user/$name",
+    "setup": {
+      "method": "POST",
+      "path": "user",
+      "json": {
+        "id": "$id",
+        "username": "$name",
+        "firstName": "Test",
+        "email": "$email",
+        "password": "course-example-42"
+      }
+    },
+    "cleanup": "user/$name"
+  },
+  {
+    "feature": "User",
+    "operation": "deleteUser",
+    "scenario": "negative",
+    "method": "DELETE",
+    "path": "user/$name",
+    "status": [
+      404
+    ]
+  },
+  {
+    "feature": "User",
+    "operation": "loginUser",
+    "scenario": "positive",
+    "method": "GET",
+    "path": "user/login",
+    "status": [
+      200
+    ],
+    "query": {
+      "username": "$name",
+      "password": "course-example-42"
+    },
+    "setup": {
+      "method": "POST",
+      "path": "user",
+      "json": {
+        "id": "$id",
+        "username": "$name",
+        "firstName": "Test",
+        "email": "$email",
+        "password": "course-example-42"
+      }
+    },
+    "cleanup": "user/$name",
+    "kind": "message"
+  },
+  {
+    "feature": "User",
+    "operation": "loginUser",
+    "scenario": "negative",
+    "method": "GET",
+    "path": "user/login",
+    "status": [
+      400,
+      401
+    ],
+    "query": {
+      "username": "$name"
+    }
+  },
+  {
+    "feature": "User",
+    "operation": "logoutUser",
+    "scenario": "positive",
+    "method": "GET",
+    "path": "user/logout",
+    "status": [
+      200
+    ],
+    "login": true,
+    "setup": {
+      "method": "POST",
+      "path": "user",
+      "json": {
+        "id": "$id",
+        "username": "$name",
+        "firstName": "Test",
+        "email": "$email",
+        "password": "course-example-42"
+      }
+    },
+    "cleanup": "user/$name"
+  },
+  {
+    "feature": "User",
+    "operation": "logoutUser",
+    "scenario": "negative",
+    "method": "GET",
+    "path": "user/logout",
+    "status": [
+      401,
+      403
+    ]
+  },
+  {
+    "feature": "User",
+    "operation": "createUser",
+    "scenario": "positive",
+    "method": "POST",
+    "path": "user",
+    "status": [
+      200
+    ],
+    "json": {
+      "id": "$id",
+      "username": "$name",
+      "firstName": "Test",
+      "email": "$email",
+      "password": "course-example-42"
+    },
+    "follow": "user/$name",
+    "cleanup": "user/$name",
+    "checks": {
+      "username": "$name"
+    }
+  },
+  {
+    "feature": "User",
+    "operation": "createUser",
+    "scenario": "negative",
+    "method": "POST",
+    "path": "user",
+    "status": [
+      400,
+      405
+    ],
+    "json": {
+      "id": "invalid-id",
+      "username": "$name",
+      "firstName": "Test",
+      "email": "$email",
+      "password": "course-example-42"
+    },
+    "cleanup": "user/$name"
+  }
+]

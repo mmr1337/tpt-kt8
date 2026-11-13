@@ -1,0 +1,503 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TestRun id="a8a3a011-25c6-46a8-9c46-b1da6692490e" name="admin@DESKTOP-QEF8UGO 2026-11-13 13:38:08"  xmlns="http://microsoft.com/schemas/VisualStudio/TeamTest/2010">
+  <Times creation="2026-11-13T13:38:08.6692133+03:00" queuing="2026-11-13T13:38:08.6692137+03:00" start="2026-11-13T13:38:06.6263292+03:00" finish="2026-11-13T13:38:29.2933629+03:00" />
+  <TestSettings name="default" id="a07eb791-3885-48b1-bca4-0e44a8c66b76">
+    <Deployment runDeploymentRoot="test-run" />
+  </TestSettings>
+  <Results>
+    <UnitTestResult executionId="098382de-c62a-4789-a1f3-ea34ad6dd8a8" testId="14628c0a-c438-db60-5e45-e3792a42b7f9" testName="PetstoreXunit.PetstoreTests.CheckOperation(caseId: &quot;createUsersWithArrayInput-negative&quot;)"  duration="00:00:00.4027892" startTime="2026-11-13T13:38:27.2211716+03:00" endTime="2026-11-13T13:38:27.6243343+03:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="098382de-c62a-4789-a1f3-ea34ad6dd8a8">
+      <Output>
+        <ErrorInfo>
+          <Message>System.InvalidOperationException : Expected HTTP 400 or 405, got 500: {"code":500,"type":"unknown","message":"something bad happened"}</Message>
+          <StackTrace>   at Petstore.PetstoreCases.RequireStatus(Result response, Int32[] expected) in PetstoreCases.cs:line 89&#xD;
+   at Petstore.PetstoreCases.Run(String testId) in PetstoreCases.cs:line 31&#xD;
+   at Petstore.PetstoreCases.Run(String testId) in PetstoreCases.cs:line 48&#xD;
+   at PetstoreXunit.PetstoreTests.CheckOperation(String caseId) in xunit-tests\PetstoreTests.cs:line 13&#xD;
+--- End of stack trace from previous location ---</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="c45bdf6e-1a85-40c9-9e4b-896ffed25a9a" testId="9a798093-1972-9e66-f3fd-c54dca339879" testName="PetstoreXunit.PetstoreTests.CheckOperation(caseId: &quot;uploadFile-negative&quot;)"  duration="00:00:00.4009339" startTime="2026-11-13T13:38:28.8369504+03:00" endTime="2026-11-13T13:38:29.2380389+03:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="c45bdf6e-1a85-40c9-9e4b-896ffed25a9a" />
+    <UnitTestResult executionId="3b421459-218f-4113-941c-f714835a0430" testId="2ddef042-8ad1-5bdb-40a9-f42ce1bbe62b" testName="PetstoreXunit.PetstoreTests.CheckOperation(caseId: &quot;updateUser-positive&quot;)"  duration="00:00:00.8093697" startTime="2026-11-13T13:38:24.8984603+03:00" endTime="2026-11-13T13:38:25.7080023+03:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="3b421459-218f-4113-941c-f714835a0430" />
+    <UnitTestResult executionId="c5aabdeb-0289-4674-ae09-38f553ea1750" testId="8983aa58-81b5-b87a-0c57-11782e7c670d" testName="PetstoreXunit.PetstoreTests.CheckOperation(caseId: &quot;placeOrder-positive&quot;)"  duration="00:00:00.5521682" startTime="2026-11-13T13:38:10.4880413+03:00" endTime="2026-11-13T13:38:11.0403734+03:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="c5aabdeb-0289-4674-ae09-38f553ea1750" />
+    <UnitTestResult executionId="9b2c9f3e-2898-4f3c-9c3a-6b94acc5bb89" testId="a462beb0-be61-5729-9b32-b9ecb1056c30" testName="PetstoreXunit.PetstoreTests.CheckOperation(caseId: &quot;getOrderById-positive&quot;)"  duration="00:00:00.6719344" startTime="2026-11-13T13:38:21.6483131+03:00" endTime="2026-11-13T13:38:22.3204111+03:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="9b2c9f3e-2898-4f3c-9c3a-6b94acc5bb89" />
+    <UnitTestResult executionId="a07432aa-e01e-48e8-9ca3-3d71e5a34cd1" testId="c1a2d020-28ab-9ef5-2d7b-dfb51b2e0772" testName="PetstoreXunit.PetstoreTests.CheckOperation(caseId: &quot;addPet-negative&quot;)"  duration="00:00:00.5377445" startTime="2026-11-13T13:38:16.5150759+03:00" endTime="2026-11-13T13:38:17.0532210+03:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="a07432aa-e01e-48e8-9ca3-3d71e5a34cd1">
+      <Output>
+        <ErrorInfo>
+          <Message>System.InvalidOperationException : Expected HTTP 400 or 405, got 500: {"code":500,"type":"unknown","message":"something bad happened"}</Message>
+          <StackTrace>   at Petstore.PetstoreCases.RequireStatus(Result response, Int32[] expected) in PetstoreCases.cs:line 89&#xD;
+   at Petstore.PetstoreCases.Run(String testId) in PetstoreCases.cs:line 31&#xD;
+   at Petstore.PetstoreCases.Run(String testId) in PetstoreCases.cs:line 48&#xD;
+   at PetstoreXunit.PetstoreTests.CheckOperation(String caseId) in xunit-tests\PetstoreTests.cs:line 13&#xD;
+--- End of stack trace from previous location ---</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="4fed15a2-2663-4ce9-b2cd-90999fc89aa3" testId="9682dc26-13f6-6583-c40a-87a2eb43aa26" testName="PetstoreXunit.PetstoreTests.CheckOperation(caseId: &quot;loginUser-positive&quot;)"  duration="00:00:00.6870806" startTime="2026-11-13T13:38:25.7082029+03:00" endTime="2026-11-13T13:38:26.3954366+03:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="4fed15a2-2663-4ce9-b2cd-90999fc89aa3" />
+    <UnitTestResult executionId="da97d497-3732-467f-9659-f684624dd275" testId="3d872ab0-e70b-9e0d-e79d-672710e5809d" testName="PetstoreXunit.PetstoreTests.CheckOperation(caseId: &quot;createUser-negative&quot;)"  duration="00:00:00.5375959" startTime="2026-11-13T13:38:27.6247317+03:00" endTime="2026-11-13T13:38:28.1625935+03:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="da97d497-3732-467f-9659-f684624dd275">
+      <Output>
+        <ErrorInfo>
+          <Message>System.InvalidOperationException : Expected HTTP 400 or 405, got 500: {"code":500,"type":"unknown","message":"something bad happened"}</Message>
+          <StackTrace>   at Petstore.PetstoreCases.RequireStatus(Result response, Int32[] expected) in PetstoreCases.cs:line 89&#xD;
+   at Petstore.PetstoreCases.Run(String testId) in PetstoreCases.cs:line 31&#xD;
+   at Petstore.PetstoreCases.Run(String testId) in PetstoreCases.cs:line 48&#xD;
+   at PetstoreXunit.PetstoreTests.CheckOperation(String caseId) in xunit-tests\PetstoreTests.cs:line 13&#xD;
+--- End of stack trace from previous location ---</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="ea1ab2c3-130b-4b42-b1fc-7ec4ade6ce24" testId="e1ad0452-1ee8-21e7-8c0e-925f6631d957" testName="PetstoreXunit.PetstoreTests.CheckOperation(caseId: &quot;deletePet-positive&quot;)"  duration="00:00:00.8083229" startTime="2026-11-13T13:38:11.4553243+03:00" endTime="2026-11-13T13:38:12.2638151+03:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="ea1ab2c3-130b-4b42-b1fc-7ec4ade6ce24" />
+    <UnitTestResult executionId="32cd8489-4485-4a9a-98d4-ef878520f965" testId="f299b7d9-16e3-a8f4-6cc2-9c681beb8810" testName="PetstoreXunit.PetstoreTests.CheckOperation(caseId: &quot;getUserByName-positive&quot;)"  duration="00:00:00.6710781" startTime="2026-11-13T13:38:20.5740539+03:00" endTime="2026-11-13T13:38:21.2452831+03:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="32cd8489-4485-4a9a-98d4-ef878520f965" />
+    <UnitTestResult executionId="6d9e70cb-62e7-44f7-bc0f-4c6ea519f9d2" testId="dd97d126-d71b-6b07-d234-76e54adbf1bd" testName="PetstoreXunit.PetstoreTests.CheckOperation(caseId: &quot;getInventory-negative&quot;)"  duration="00:00:00.4149220" startTime="2026-11-13T13:38:12.2640601+03:00" endTime="2026-11-13T13:38:12.6796262+03:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="6d9e70cb-62e7-44f7-bc0f-4c6ea519f9d2">
+      <Output>
+        <ErrorInfo>
+          <Message>System.InvalidOperationException : Expected HTTP 406, got 500: &lt;html&gt;
+&lt;head&gt;
+&lt;meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/&gt;
+&lt;title&gt;Error 500 Server Error&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;&lt;h2&gt;HTTP ERROR 500&lt;/h2&gt;
+&lt;p&gt;Problem accessing /v2/store/inventory. Reason:
+&lt;pre&gt;    Server Error&lt;/pre&gt;&lt;/p&gt;&lt;h3&gt;Caused by:&lt;/h3&gt;&lt;pre&gt;javax.ws.rs.WebApplicationException:</Message>
+          <StackTrace>   at Petstore.PetstoreCases.RequireStatus(Result response, Int32[] expected) in PetstoreCases.cs:line 89&#xD;
+   at Petstore.PetstoreCases.Run(String testId) in PetstoreCases.cs:line 31&#xD;
+   at Petstore.PetstoreCases.Run(String testId) in PetstoreCases.cs:line 48&#xD;
+   at PetstoreXunit.PetstoreTests.CheckOperation(String caseId) in xunit-tests\PetstoreTests.cs:line 13&#xD;
+--- End of stack trace from previous location ---</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="3013456c-345b-4f17-93ef-2fea78854fe9" testId="51102316-10d6-f608-1e8b-e71244da6d1b" testName="PetstoreXunit.PetstoreTests.CheckOperation(caseId: &quot;deletePet-negative&quot;)"  duration="00:00:00.4026241" startTime="2026-11-13T13:38:21.2454257+03:00" endTime="2026-11-13T13:38:21.6481786+03:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="3013456c-345b-4f17-93ef-2fea78854fe9" />
+    <UnitTestResult executionId="62955d05-f0d1-4221-aa9f-3bd17197d89d" testId="1406d57c-1906-e35f-f0a2-8d8126a5814d" testName="PetstoreXunit.PetstoreTests.CheckOperation(caseId: &quot;updateUser-negative&quot;)"  duration="00:00:00.5451909" startTime="2026-11-13T13:38:08.4534081+03:00" endTime="2026-11-13T13:38:08.9975241+03:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="62955d05-f0d1-4221-aa9f-3bd17197d89d">
+      <Output>
+        <ErrorInfo>
+          <Message>System.InvalidOperationException : Expected HTTP 400 or 405, got 500: {"code":500,"type":"unknown","message":"something bad happened"}</Message>
+          <StackTrace>   at Petstore.PetstoreCases.RequireStatus(Result response, Int32[] expected) in PetstoreCases.cs:line 89&#xD;
+   at Petstore.PetstoreCases.Run(String testId) in PetstoreCases.cs:line 31&#xD;
+   at Petstore.PetstoreCases.Run(String testId) in PetstoreCases.cs:line 48&#xD;
+   at PetstoreXunit.PetstoreTests.CheckOperation(String caseId) in xunit-tests\PetstoreTests.cs:line 13&#xD;
+--- End of stack trace from previous location ---</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="dc8d9a40-83ce-4c37-b161-61b9158c30e1" testId="8db98897-ba64-d3cd-3858-9fcc51a1f2b8" testName="PetstoreXunit.PetstoreTests.CheckOperation(caseId: &quot;updatePetWithForm-positive&quot;)"  duration="00:00:00.8084924" startTime="2026-11-13T13:38:13.1109792+03:00" endTime="2026-11-13T13:38:13.9192731+03:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="dc8d9a40-83ce-4c37-b161-61b9158c30e1" />
+    <UnitTestResult executionId="7c78d63b-a271-4cde-88f3-59ec92685304" testId="74615624-f618-c667-ea32-07b984649851" testName="PetstoreXunit.PetstoreTests.CheckOperation(caseId: &quot;logoutUser-negative&quot;)"  duration="00:00:00.4302024" startTime="2026-11-13T13:38:12.6802314+03:00" endTime="2026-11-13T13:38:13.1104226+03:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="7c78d63b-a271-4cde-88f3-59ec92685304">
+      <Output>
+        <ErrorInfo>
+          <Message>System.InvalidOperationException : Expected HTTP 401 or 403, got 200: {"code":200,"type":"unknown","message":"ok"}</Message>
+          <StackTrace>   at Petstore.PetstoreCases.RequireStatus(Result response, Int32[] expected) in PetstoreCases.cs:line 89&#xD;
+   at Petstore.PetstoreCases.Run(String testId) in PetstoreCases.cs:line 31&#xD;
+   at Petstore.PetstoreCases.Run(String testId) in PetstoreCases.cs:line 48&#xD;
+   at PetstoreXunit.PetstoreTests.CheckOperation(String caseId) in xunit-tests\PetstoreTests.cs:line 13&#xD;
+--- End of stack trace from previous location ---</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="0dc98b9c-c546-4ffb-be09-57233e73fe18" testId="9cbd7abd-7c9f-6aee-8eff-91f3f3e86516" testName="PetstoreXunit.PetstoreTests.CheckOperation(caseId: &quot;uploadFile-positive&quot;)"  duration="00:00:00.6739491" startTime="2026-11-13T13:38:28.1635420+03:00" endTime="2026-11-13T13:38:28.8368272+03:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="0dc98b9c-c546-4ffb-be09-57233e73fe18" />
+    <UnitTestResult executionId="521cbabf-8ae8-484e-98b6-bb77431576a4" testId="f2dc662e-fcc5-aa95-f81c-ee3349009bb7" testName="PetstoreXunit.PetstoreTests.CheckOperation(caseId: &quot;getOrderById-negative&quot;)"  duration="00:00:00.4142841" startTime="2026-11-13T13:38:11.0407052+03:00" endTime="2026-11-13T13:38:11.4550486+03:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="521cbabf-8ae8-484e-98b6-bb77431576a4" />
+    <UnitTestResult executionId="08fc1af2-f6a7-4328-a524-bc2fac3bf5d2" testId="9ff64f4c-0428-eeac-fbcd-3d03853f1bb6" testName="PetstoreXunit.PetstoreTests.CheckOperation(caseId: &quot;createUser-positive&quot;)"  duration="00:00:00.6899364" startTime="2026-11-13T13:38:15.8248151+03:00" endTime="2026-11-13T13:38:16.5149064+03:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="08fc1af2-f6a7-4328-a524-bc2fac3bf5d2" />
+    <UnitTestResult executionId="79c299f8-87e7-4857-b449-0ba23d6c3997" testId="7948cfdb-6467-7e13-7690-f1c722c836a4" testName="PetstoreXunit.PetstoreTests.CheckOperation(caseId: &quot;findPetsByStatus-positive&quot;)"  duration="00:00:00.6739574" startTime="2026-11-13T13:38:22.3265093+03:00" endTime="2026-11-13T13:38:22.9946393+03:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="79c299f8-87e7-4857-b449-0ba23d6c3997" />
+    <UnitTestResult executionId="396ab291-9c15-4144-8ada-bb8a4ffb9a58" testId="1f0f1643-925f-e217-932f-d2d0d203be26" testName="PetstoreXunit.PetstoreTests.CheckOperation(caseId: &quot;logoutUser-positive&quot;)"  duration="00:00:00.8089865" startTime="2026-11-13T13:38:19.7651142+03:00" endTime="2026-11-13T13:38:20.5739062+03:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="396ab291-9c15-4144-8ada-bb8a4ffb9a58" />
+    <UnitTestResult executionId="4e270422-5e46-4c1e-88d3-026b93db954c" testId="46511a9d-e756-575b-5d10-3e6b513904c0" testName="PetstoreXunit.PetstoreTests.CheckOperation(caseId: &quot;placeOrder-negative&quot;)"  duration="00:00:00.5370443" startTime="2026-11-13T13:38:17.0537748+03:00" endTime="2026-11-13T13:38:17.5908071+03:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="4e270422-5e46-4c1e-88d3-026b93db954c">
+      <Output>
+        <ErrorInfo>
+          <Message>System.InvalidOperationException : Expected HTTP 400, got 500: {"code":500,"type":"unknown","message":"something bad happened"}</Message>
+          <StackTrace>   at Petstore.PetstoreCases.RequireStatus(Result response, Int32[] expected) in PetstoreCases.cs:line 89&#xD;
+   at Petstore.PetstoreCases.Run(String testId) in PetstoreCases.cs:line 31&#xD;
+   at Petstore.PetstoreCases.Run(String testId) in PetstoreCases.cs:line 48&#xD;
+   at PetstoreXunit.PetstoreTests.CheckOperation(String caseId) in xunit-tests\PetstoreTests.cs:line 13&#xD;
+--- End of stack trace from previous location ---</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="d71d4b65-f979-4246-a7d9-5080481b8bf6" testId="f1cd7002-cf35-328c-812d-c56d2fdfda5a" testName="PetstoreXunit.PetstoreTests.CheckOperation(caseId: &quot;createUsersWithArrayInput-positive&quot;)"  duration="00:00:00.6726884" startTime="2026-11-13T13:38:18.1414951+03:00" endTime="2026-11-13T13:38:18.8142971+03:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="d71d4b65-f979-4246-a7d9-5080481b8bf6" />
+    <UnitTestResult executionId="80dad058-05d7-4e58-92f6-c451b2e9e263" testId="254de509-14b8-9206-753a-67118aa99ac1" testName="PetstoreXunit.PetstoreTests.CheckOperation(caseId: &quot;createUsersWithListInput-negative&quot;)"  duration="00:00:00.4017812" startTime="2026-11-13T13:38:23.8227510+03:00" endTime="2026-11-13T13:38:24.2250216+03:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="80dad058-05d7-4e58-92f6-c451b2e9e263">
+      <Output>
+        <ErrorInfo>
+          <Message>System.InvalidOperationException : Expected HTTP 400 or 405, got 500: {"code":500,"type":"unknown","message":"something bad happened"}</Message>
+          <StackTrace>   at Petstore.PetstoreCases.RequireStatus(Result response, Int32[] expected) in PetstoreCases.cs:line 89&#xD;
+   at Petstore.PetstoreCases.Run(String testId) in PetstoreCases.cs:line 31&#xD;
+   at Petstore.PetstoreCases.Run(String testId) in PetstoreCases.cs:line 48&#xD;
+   at PetstoreXunit.PetstoreTests.CheckOperation(String caseId) in xunit-tests\PetstoreTests.cs:line 13&#xD;
+--- End of stack trace from previous location ---</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="c5e84d86-a0b6-4c87-9a52-669232d8a3b0" testId="92f361d1-bfd0-9ac2-6ff1-7866526df765" testName="PetstoreXunit.PetstoreTests.CheckOperation(caseId: &quot;getInventory-positive&quot;)"  duration="00:00:00.4131308" startTime="2026-11-13T13:38:14.7390684+03:00" endTime="2026-11-13T13:38:15.1523807+03:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="c5e84d86-a0b6-4c87-9a52-669232d8a3b0" />
+    <UnitTestResult executionId="3ad36e22-4afa-494b-b590-b57f0ca54cfa" testId="98e05ba3-125c-dc4e-2573-5d28098bb2fa" testName="PetstoreXunit.PetstoreTests.CheckOperation(caseId: &quot;deleteOrder-positive&quot;)"  duration="00:00:00.8276645" startTime="2026-11-13T13:38:22.9947590+03:00" endTime="2026-11-13T13:38:23.8226081+03:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="3ad36e22-4afa-494b-b590-b57f0ca54cfa" />
+    <UnitTestResult executionId="0fc7b0f1-6d3d-4be1-8cb7-d7d328029d7f" testId="bc9c2e9b-916d-4029-4eda-ee6755bdc388" testName="PetstoreXunit.PetstoreTests.CheckOperation(caseId: &quot;deleteUser-negative&quot;)"  duration="00:00:00.4096962" startTime="2026-11-13T13:38:14.3295125+03:00" endTime="2026-11-13T13:38:14.7389121+03:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="0fc7b0f1-6d3d-4be1-8cb7-d7d328029d7f" />
+    <UnitTestResult executionId="9e878061-4607-454e-b298-b09a43d9eeae" testId="1c7fa0bc-85b1-44b7-d3b4-fb3d10f1e2b2" testName="PetstoreXunit.PetstoreTests.CheckOperation(caseId: &quot;updatePet-positive&quot;)"  duration="00:00:00.6724217" startTime="2026-11-13T13:38:09.8153727+03:00" endTime="2026-11-13T13:38:10.4878429+03:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="9e878061-4607-454e-b298-b09a43d9eeae" />
+    <UnitTestResult executionId="f3af880e-9117-48ab-847d-ea94047917fc" testId="30842c32-223d-01f0-70ef-69771973781a" testName="PetstoreXunit.PetstoreTests.CheckOperation(caseId: &quot;getPetById-positive&quot;)"  duration="00:00:00.6730456" startTime="2026-11-13T13:38:24.2255286+03:00" endTime="2026-11-13T13:38:24.8983300+03:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="f3af880e-9117-48ab-847d-ea94047917fc" />
+    <UnitTestResult executionId="20bc609a-f5fc-45cf-8973-20bf85c847f5" testId="e4683ef4-13e7-6b6d-59bf-2026a2670d88" testName="PetstoreXunit.PetstoreTests.CheckOperation(caseId: &quot;loginUser-negative&quot;)"  duration="00:00:00.6509811" startTime="2026-11-13T13:38:07.3763712+03:00" endTime="2026-11-13T13:38:08.0439259+03:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="20bc609a-f5fc-45cf-8973-20bf85c847f5">
+      <Output>
+        <ErrorInfo>
+          <Message>System.InvalidOperationException : Expected HTTP 400 or 401, got 200: {"code":200,"type":"unknown","message":"logged in user session:1794566287929"}</Message>
+          <StackTrace>   at Petstore.PetstoreCases.RequireStatus(Result response, Int32[] expected) in PetstoreCases.cs:line 89&#xD;
+   at Petstore.PetstoreCases.Run(String testId) in PetstoreCases.cs:line 31&#xD;
+   at Petstore.PetstoreCases.Run(String testId) in PetstoreCases.cs:line 48&#xD;
+   at PetstoreXunit.PetstoreTests.CheckOperation(String caseId) in xunit-tests\PetstoreTests.cs:line 13&#xD;
+--- End of stack trace from previous location ---</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="d2236306-f1bf-45dc-9e3b-3e9629fc77fd" testId="54282663-d503-1a1c-4293-eece655727fa" testName="PetstoreXunit.PetstoreTests.CheckOperation(caseId: &quot;deleteOrder-negative&quot;)"  duration="00:00:00.4111327" startTime="2026-11-13T13:38:18.8144461+03:00" endTime="2026-11-13T13:38:19.2257416+03:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="d2236306-f1bf-45dc-9e3b-3e9629fc77fd" />
+    <UnitTestResult executionId="b5617b40-12aa-487d-b191-4705145ba5e3" testId="f963e329-c797-b9a6-201a-ced435c15b0c" testName="PetstoreXunit.PetstoreTests.CheckOperation(caseId: &quot;createUsersWithListInput-positive&quot;)"  duration="00:00:00.6719880" startTime="2026-11-13T13:38:15.1530506+03:00" endTime="2026-11-13T13:38:15.8246704+03:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="b5617b40-12aa-487d-b191-4705145ba5e3" />
+    <UnitTestResult executionId="2f93713a-9392-4fa9-9695-e516c3335b22" testId="90ad0326-f779-dd7a-ed1d-ea33423cb81f" testName="PetstoreXunit.PetstoreTests.CheckOperation(caseId: &quot;addPet-positive&quot;)"  duration="00:00:00.5501625" startTime="2026-11-13T13:38:17.5912988+03:00" endTime="2026-11-13T13:38:18.1412633+03:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="2f93713a-9392-4fa9-9695-e516c3335b22" />
+    <UnitTestResult executionId="54d90127-553d-487d-886f-f8bcbc676bd1" testId="b13e988e-4916-0e8f-6c81-068804ed0f29" testName="PetstoreXunit.PetstoreTests.CheckOperation(caseId: &quot;findPetsByStatus-negative&quot;)"  duration="00:00:00.4091308" startTime="2026-11-13T13:38:13.9194678+03:00" endTime="2026-11-13T13:38:14.3289420+03:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="54d90127-553d-487d-886f-f8bcbc676bd1">
+      <Output>
+        <ErrorInfo>
+          <Message>System.InvalidOperationException : Expected HTTP 400, got 200: []</Message>
+          <StackTrace>   at Petstore.PetstoreCases.RequireStatus(Result response, Int32[] expected) in PetstoreCases.cs:line 89&#xD;
+   at Petstore.PetstoreCases.Run(String testId) in PetstoreCases.cs:line 31&#xD;
+   at Petstore.PetstoreCases.Run(String testId) in PetstoreCases.cs:line 48&#xD;
+   at PetstoreXunit.PetstoreTests.CheckOperation(String caseId) in xunit-tests\PetstoreTests.cs:line 13&#xD;
+--- End of stack trace from previous location ---</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="e7e08846-58aa-4d0f-95f7-671a90d91446" testId="4e569c67-cbbb-8bee-0e88-1c83f239532d" testName="PetstoreXunit.PetstoreTests.CheckOperation(caseId: &quot;deleteUser-positive&quot;)"  duration="00:00:00.8253224" startTime="2026-11-13T13:38:26.3956875+03:00" endTime="2026-11-13T13:38:27.2210609+03:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="e7e08846-58aa-4d0f-95f7-671a90d91446" />
+    <UnitTestResult executionId="035be884-3207-49eb-ab3d-36d639094f2e" testId="f0d930d8-9839-79fb-722c-93d10e405521" testName="PetstoreXunit.PetstoreTests.CheckOperation(caseId: &quot;getUserByName-negative&quot;)"  duration="00:00:00.4130662" startTime="2026-11-13T13:38:09.4020266+03:00" endTime="2026-11-13T13:38:09.8150738+03:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="035be884-3207-49eb-ab3d-36d639094f2e" />
+    <UnitTestResult executionId="a1a0de85-d650-4ad2-abc4-bd81d4ceb77b" testId="468d9ad7-7107-878e-643a-262c3537ddc5" testName="PetstoreXunit.PetstoreTests.CheckOperation(caseId: &quot;updatePetWithForm-negative&quot;)"  duration="00:00:00.4063100" startTime="2026-11-13T13:38:08.0593925+03:00" endTime="2026-11-13T13:38:08.4518980+03:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="a1a0de85-d650-4ad2-abc4-bd81d4ceb77b" />
+    <UnitTestResult executionId="79d19057-729b-48b9-8daf-5c0f49284933" testId="639e1db3-be68-26ff-b028-c6d1c09dbf0a" testName="PetstoreXunit.PetstoreTests.CheckOperation(caseId: &quot;getPetById-negative&quot;)"  duration="00:00:00.4037546" startTime="2026-11-13T13:38:08.9987696+03:00" endTime="2026-11-13T13:38:09.4016789+03:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="79d19057-729b-48b9-8daf-5c0f49284933" />
+    <UnitTestResult executionId="c01b13c6-4511-472c-88d1-9307189450bb" testId="000ea5c9-e8a0-a24a-5bc4-5bf57dad5187" testName="PetstoreXunit.PetstoreTests.CheckOperation(caseId: &quot;updatePet-negative&quot;)"  duration="00:00:00.5382396" startTime="2026-11-13T13:38:19.2258923+03:00" endTime="2026-11-13T13:38:19.7646161+03:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="c01b13c6-4511-472c-88d1-9307189450bb">
+      <Output>
+        <ErrorInfo>
+          <Message>System.InvalidOperationException : Expected HTTP 400 or 405, got 500: {"code":500,"type":"unknown","message":"something bad happened"}</Message>
+          <StackTrace>   at Petstore.PetstoreCases.RequireStatus(Result response, Int32[] expected) in PetstoreCases.cs:line 89&#xD;
+   at Petstore.PetstoreCases.Run(String testId) in PetstoreCases.cs:line 31&#xD;
+   at Petstore.PetstoreCases.Run(String testId) in PetstoreCases.cs:line 48&#xD;
+   at PetstoreXunit.PetstoreTests.CheckOperation(String caseId) in xunit-tests\PetstoreTests.cs:line 13&#xD;
+--- End of stack trace from previous location ---</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+  </Results>
+  <TestDefinitions>
+    <UnitTest name="PetstoreXunit.PetstoreTests.CheckOperation(caseId: &quot;updatePetWithForm-negative&quot;)" storage="xunit-tests\bin\debug\net10.0\petstore.xunit.dll" id="468d9ad7-7107-878e-643a-262c3537ddc5">
+      <Execution id="a1a0de85-d650-4ad2-abc4-bd81d4ceb77b" />
+      <TestMethod codeBase="xunit-tests\bin\Debug\net10.0\Petstore.Xunit.dll" adapterTypeName="executor://xunit/VsTestRunner3/netcore/" className="PetstoreXunit.PetstoreTests" name="CheckOperation" />
+    </UnitTest>
+    <UnitTest name="PetstoreXunit.PetstoreTests.CheckOperation(caseId: &quot;updateUser-positive&quot;)" storage="xunit-tests\bin\debug\net10.0\petstore.xunit.dll" id="2ddef042-8ad1-5bdb-40a9-f42ce1bbe62b">
+      <Execution id="3b421459-218f-4113-941c-f714835a0430" />
+      <TestMethod codeBase="xunit-tests\bin\Debug\net10.0\Petstore.Xunit.dll" adapterTypeName="executor://xunit/VsTestRunner3/netcore/" className="PetstoreXunit.PetstoreTests" name="CheckOperation" />
+    </UnitTest>
+    <UnitTest name="PetstoreXunit.PetstoreTests.CheckOperation(caseId: &quot;getOrderById-negative&quot;)" storage="xunit-tests\bin\debug\net10.0\petstore.xunit.dll" id="f2dc662e-fcc5-aa95-f81c-ee3349009bb7">
+      <Execution id="521cbabf-8ae8-484e-98b6-bb77431576a4" />
+      <TestMethod codeBase="xunit-tests\bin\Debug\net10.0\Petstore.Xunit.dll" adapterTypeName="executor://xunit/VsTestRunner3/netcore/" className="PetstoreXunit.PetstoreTests" name="CheckOperation" />
+    </UnitTest>
+    <UnitTest name="PetstoreXunit.PetstoreTests.CheckOperation(caseId: &quot;updateUser-negative&quot;)" storage="xunit-tests\bin\debug\net10.0\petstore.xunit.dll" id="1406d57c-1906-e35f-f0a2-8d8126a5814d">
+      <Execution id="62955d05-f0d1-4221-aa9f-3bd17197d89d" />
+      <TestMethod codeBase="xunit-tests\bin\Debug\net10.0\Petstore.Xunit.dll" adapterTypeName="executor://xunit/VsTestRunner3/netcore/" className="PetstoreXunit.PetstoreTests" name="CheckOperation" />
+    </UnitTest>
+    <UnitTest name="PetstoreXunit.PetstoreTests.CheckOperation(caseId: &quot;createUser-positive&quot;)" storage="xunit-tests\bin\debug\net10.0\petstore.xunit.dll" id="9ff64f4c-0428-eeac-fbcd-3d03853f1bb6">
+      <Execution id="08fc1af2-f6a7-4328-a524-bc2fac3bf5d2" />
+      <TestMethod codeBase="xunit-tests\bin\Debug\net10.0\Petstore.Xunit.dll" adapterTypeName="executor://xunit/VsTestRunner3/netcore/" className="PetstoreXunit.PetstoreTests" name="CheckOperation" />
+    </UnitTest>
+    <UnitTest name="PetstoreXunit.PetstoreTests.CheckOperation(caseId: &quot;findPetsByStatus-negative&quot;)" storage="xunit-tests\bin\debug\net10.0\petstore.xunit.dll" id="b13e988e-4916-0e8f-6c81-068804ed0f29">
+      <Execution id="54d90127-553d-487d-886f-f8bcbc676bd1" />
+      <TestMethod codeBase="xunit-tests\bin\Debug\net10.0\Petstore.Xunit.dll" adapterTypeName="executor://xunit/VsTestRunner3/netcore/" className="PetstoreXunit.PetstoreTests" name="CheckOperation" />
+    </UnitTest>
+    <UnitTest name="PetstoreXunit.PetstoreTests.CheckOperation(caseId: &quot;placeOrder-positive&quot;)" storage="xunit-tests\bin\debug\net10.0\petstore.xunit.dll" id="8983aa58-81b5-b87a-0c57-11782e7c670d">
+      <Execution id="c5aabdeb-0289-4674-ae09-38f553ea1750" />
+      <TestMethod codeBase="xunit-tests\bin\Debug\net10.0\Petstore.Xunit.dll" adapterTypeName="executor://xunit/VsTestRunner3/netcore/" className="PetstoreXunit.PetstoreTests" name="CheckOperation" />
+    </UnitTest>
+    <UnitTest name="PetstoreXunit.PetstoreTests.CheckOperation(caseId: &quot;getInventory-positive&quot;)" storage="xunit-tests\bin\debug\net10.0\petstore.xunit.dll" id="92f361d1-bfd0-9ac2-6ff1-7866526df765">
+      <Execution id="c5e84d86-a0b6-4c87-9a52-669232d8a3b0" />
+      <TestMethod codeBase="xunit-tests\bin\Debug\net10.0\Petstore.Xunit.dll" adapterTypeName="executor://xunit/VsTestRunner3/netcore/" className="PetstoreXunit.PetstoreTests" name="CheckOperation" />
+    </UnitTest>
+    <UnitTest name="PetstoreXunit.PetstoreTests.CheckOperation(caseId: &quot;updatePet-negative&quot;)" storage="xunit-tests\bin\debug\net10.0\petstore.xunit.dll" id="000ea5c9-e8a0-a24a-5bc4-5bf57dad5187">
+      <Execution id="c01b13c6-4511-472c-88d1-9307189450bb" />
+      <TestMethod codeBase="xunit-tests\bin\Debug\net10.0\Petstore.Xunit.dll" adapterTypeName="executor://xunit/VsTestRunner3/netcore/" className="PetstoreXunit.PetstoreTests" name="CheckOperation" />
+    </UnitTest>
+    <UnitTest name="PetstoreXunit.PetstoreTests.CheckOperation(caseId: &quot;getUserByName-positive&quot;)" storage="xunit-tests\bin\debug\net10.0\petstore.xunit.dll" id="f299b7d9-16e3-a8f4-6cc2-9c681beb8810">
+      <Execution id="32cd8489-4485-4a9a-98d4-ef878520f965" />
+      <TestMethod codeBase="xunit-tests\bin\Debug\net10.0\Petstore.Xunit.dll" adapterTypeName="executor://xunit/VsTestRunner3/netcore/" className="PetstoreXunit.PetstoreTests" name="CheckOperation" />
+    </UnitTest>
+    <UnitTest name="PetstoreXunit.PetstoreTests.CheckOperation(caseId: &quot;loginUser-positive&quot;)" storage="xunit-tests\bin\debug\net10.0\petstore.xunit.dll" id="9682dc26-13f6-6583-c40a-87a2eb43aa26">
+      <Execution id="4fed15a2-2663-4ce9-b2cd-90999fc89aa3" />
+      <TestMethod codeBase="xunit-tests\bin\Debug\net10.0\Petstore.Xunit.dll" adapterTypeName="executor://xunit/VsTestRunner3/netcore/" className="PetstoreXunit.PetstoreTests" name="CheckOperation" />
+    </UnitTest>
+    <UnitTest name="PetstoreXunit.PetstoreTests.CheckOperation(caseId: &quot;logoutUser-positive&quot;)" storage="xunit-tests\bin\debug\net10.0\petstore.xunit.dll" id="1f0f1643-925f-e217-932f-d2d0d203be26">
+      <Execution id="396ab291-9c15-4144-8ada-bb8a4ffb9a58" />
+      <TestMethod codeBase="xunit-tests\bin\Debug\net10.0\Petstore.Xunit.dll" adapterTypeName="executor://xunit/VsTestRunner3/netcore/" className="PetstoreXunit.PetstoreTests" name="CheckOperation" />
+    </UnitTest>
+    <UnitTest name="PetstoreXunit.PetstoreTests.CheckOperation(caseId: &quot;deleteOrder-negative&quot;)" storage="xunit-tests\bin\debug\net10.0\petstore.xunit.dll" id="54282663-d503-1a1c-4293-eece655727fa">
+      <Execution id="d2236306-f1bf-45dc-9e3b-3e9629fc77fd" />
+      <TestMethod codeBase="xunit-tests\bin\Debug\net10.0\Petstore.Xunit.dll" adapterTypeName="executor://xunit/VsTestRunner3/netcore/" className="PetstoreXunit.PetstoreTests" name="CheckOperation" />
+    </UnitTest>
+    <UnitTest name="PetstoreXunit.PetstoreTests.CheckOperation(caseId: &quot;updatePet-positive&quot;)" storage="xunit-tests\bin\debug\net10.0\petstore.xunit.dll" id="1c7fa0bc-85b1-44b7-d3b4-fb3d10f1e2b2">
+      <Execution id="9e878061-4607-454e-b298-b09a43d9eeae" />
+      <TestMethod codeBase="xunit-tests\bin\Debug\net10.0\Petstore.Xunit.dll" adapterTypeName="executor://xunit/VsTestRunner3/netcore/" className="PetstoreXunit.PetstoreTests" name="CheckOperation" />
+    </UnitTest>
+    <UnitTest name="PetstoreXunit.PetstoreTests.CheckOperation(caseId: &quot;logoutUser-negative&quot;)" storage="xunit-tests\bin\debug\net10.0\petstore.xunit.dll" id="74615624-f618-c667-ea32-07b984649851">
+      <Execution id="7c78d63b-a271-4cde-88f3-59ec92685304" />
+      <TestMethod codeBase="xunit-tests\bin\Debug\net10.0\Petstore.Xunit.dll" adapterTypeName="executor://xunit/VsTestRunner3/netcore/" className="PetstoreXunit.PetstoreTests" name="CheckOperation" />
+    </UnitTest>
+    <UnitTest name="PetstoreXunit.PetstoreTests.CheckOperation(caseId: &quot;deleteUser-positive&quot;)" storage="xunit-tests\bin\debug\net10.0\petstore.xunit.dll" id="4e569c67-cbbb-8bee-0e88-1c83f239532d">
+      <Execution id="e7e08846-58aa-4d0f-95f7-671a90d91446" />
+      <TestMethod codeBase="xunit-tests\bin\Debug\net10.0\Petstore.Xunit.dll" adapterTypeName="executor://xunit/VsTestRunner3/netcore/" className="PetstoreXunit.PetstoreTests" name="CheckOperation" />
+    </UnitTest>
+    <UnitTest name="PetstoreXunit.PetstoreTests.CheckOperation(caseId: &quot;deleteOrder-positive&quot;)" storage="xunit-tests\bin\debug\net10.0\petstore.xunit.dll" id="98e05ba3-125c-dc4e-2573-5d28098bb2fa">
+      <Execution id="3ad36e22-4afa-494b-b590-b57f0ca54cfa" />
+      <TestMethod codeBase="xunit-tests\bin\Debug\net10.0\Petstore.Xunit.dll" adapterTypeName="executor://xunit/VsTestRunner3/netcore/" className="PetstoreXunit.PetstoreTests" name="CheckOperation" />
+    </UnitTest>
+    <UnitTest name="PetstoreXunit.PetstoreTests.CheckOperation(caseId: &quot;createUsersWithListInput-negative&quot;)" storage="xunit-tests\bin\debug\net10.0\petstore.xunit.dll" id="254de509-14b8-9206-753a-67118aa99ac1">
+      <Execution id="80dad058-05d7-4e58-92f6-c451b2e9e263" />
+      <TestMethod codeBase="xunit-tests\bin\Debug\net10.0\Petstore.Xunit.dll" adapterTypeName="executor://xunit/VsTestRunner3/netcore/" className="PetstoreXunit.PetstoreTests" name="CheckOperation" />
+    </UnitTest>
+    <UnitTest name="PetstoreXunit.PetstoreTests.CheckOperation(caseId: &quot;uploadFile-positive&quot;)" storage="xunit-tests\bin\debug\net10.0\petstore.xunit.dll" id="9cbd7abd-7c9f-6aee-8eff-91f3f3e86516">
+      <Execution id="0dc98b9c-c546-4ffb-be09-57233e73fe18" />
+      <TestMethod codeBase="xunit-tests\bin\Debug\net10.0\Petstore.Xunit.dll" adapterTypeName="executor://xunit/VsTestRunner3/netcore/" className="PetstoreXunit.PetstoreTests" name="CheckOperation" />
+    </UnitTest>
+    <UnitTest name="PetstoreXunit.PetstoreTests.CheckOperation(caseId: &quot;addPet-negative&quot;)" storage="xunit-tests\bin\debug\net10.0\petstore.xunit.dll" id="c1a2d020-28ab-9ef5-2d7b-dfb51b2e0772">
+      <Execution id="a07432aa-e01e-48e8-9ca3-3d71e5a34cd1" />
+      <TestMethod codeBase="xunit-tests\bin\Debug\net10.0\Petstore.Xunit.dll" adapterTypeName="executor://xunit/VsTestRunner3/netcore/" className="PetstoreXunit.PetstoreTests" name="CheckOperation" />
+    </UnitTest>
+    <UnitTest name="PetstoreXunit.PetstoreTests.CheckOperation(caseId: &quot;getOrderById-positive&quot;)" storage="xunit-tests\bin\debug\net10.0\petstore.xunit.dll" id="a462beb0-be61-5729-9b32-b9ecb1056c30">
+      <Execution id="9b2c9f3e-2898-4f3c-9c3a-6b94acc5bb89" />
+      <TestMethod codeBase="xunit-tests\bin\Debug\net10.0\Petstore.Xunit.dll" adapterTypeName="executor://xunit/VsTestRunner3/netcore/" className="PetstoreXunit.PetstoreTests" name="CheckOperation" />
+    </UnitTest>
+    <UnitTest name="PetstoreXunit.PetstoreTests.CheckOperation(caseId: &quot;deletePet-negative&quot;)" storage="xunit-tests\bin\debug\net10.0\petstore.xunit.dll" id="51102316-10d6-f608-1e8b-e71244da6d1b">
+      <Execution id="3013456c-345b-4f17-93ef-2fea78854fe9" />
+      <TestMethod codeBase="xunit-tests\bin\Debug\net10.0\Petstore.Xunit.dll" adapterTypeName="executor://xunit/VsTestRunner3/netcore/" className="PetstoreXunit.PetstoreTests" name="CheckOperation" />
+    </UnitTest>
+    <UnitTest name="PetstoreXunit.PetstoreTests.CheckOperation(caseId: &quot;updatePetWithForm-positive&quot;)" storage="xunit-tests\bin\debug\net10.0\petstore.xunit.dll" id="8db98897-ba64-d3cd-3858-9fcc51a1f2b8">
+      <Execution id="dc8d9a40-83ce-4c37-b161-61b9158c30e1" />
+      <TestMethod codeBase="xunit-tests\bin\Debug\net10.0\Petstore.Xunit.dll" adapterTypeName="executor://xunit/VsTestRunner3/netcore/" className="PetstoreXunit.PetstoreTests" name="CheckOperation" />
+    </UnitTest>
+    <UnitTest name="PetstoreXunit.PetstoreTests.CheckOperation(caseId: &quot;createUsersWithArrayInput-negative&quot;)" storage="xunit-tests\bin\debug\net10.0\petstore.xunit.dll" id="14628c0a-c438-db60-5e45-e3792a42b7f9">
+      <Execution id="098382de-c62a-4789-a1f3-ea34ad6dd8a8" />
+      <TestMethod codeBase="xunit-tests\bin\Debug\net10.0\Petstore.Xunit.dll" adapterTypeName="executor://xunit/VsTestRunner3/netcore/" className="PetstoreXunit.PetstoreTests" name="CheckOperation" />
+    </UnitTest>
+    <UnitTest name="PetstoreXunit.PetstoreTests.CheckOperation(caseId: &quot;getPetById-negative&quot;)" storage="xunit-tests\bin\debug\net10.0\petstore.xunit.dll" id="639e1db3-be68-26ff-b028-c6d1c09dbf0a">
+      <Execution id="79d19057-729b-48b9-8daf-5c0f49284933" />
+      <TestMethod codeBase="xunit-tests\bin\Debug\net10.0\Petstore.Xunit.dll" adapterTypeName="executor://xunit/VsTestRunner3/netcore/" className="PetstoreXunit.PetstoreTests" name="CheckOperation" />
+    </UnitTest>
+    <UnitTest name="PetstoreXunit.PetstoreTests.CheckOperation(caseId: &quot;deletePet-positive&quot;)" storage="xunit-tests\bin\debug\net10.0\petstore.xunit.dll" id="e1ad0452-1ee8-21e7-8c0e-925f6631d957">
+      <Execution id="ea1ab2c3-130b-4b42-b1fc-7ec4ade6ce24" />
+      <TestMethod codeBase="xunit-tests\bin\Debug\net10.0\Petstore.Xunit.dll" adapterTypeName="executor://xunit/VsTestRunner3/netcore/" className="PetstoreXunit.PetstoreTests" name="CheckOperation" />
+    </UnitTest>
+    <UnitTest name="PetstoreXunit.PetstoreTests.CheckOperation(caseId: &quot;getUserByName-negative&quot;)" storage="xunit-tests\bin\debug\net10.0\petstore.xunit.dll" id="f0d930d8-9839-79fb-722c-93d10e405521">
+      <Execution id="035be884-3207-49eb-ab3d-36d639094f2e" />
+      <TestMethod codeBase="xunit-tests\bin\Debug\net10.0\Petstore.Xunit.dll" adapterTypeName="executor://xunit/VsTestRunner3/netcore/" className="PetstoreXunit.PetstoreTests" name="CheckOperation" />
+    </UnitTest>
+    <UnitTest name="PetstoreXunit.PetstoreTests.CheckOperation(caseId: &quot;findPetsByStatus-positive&quot;)" storage="xunit-tests\bin\debug\net10.0\petstore.xunit.dll" id="7948cfdb-6467-7e13-7690-f1c722c836a4">
+      <Execution id="79c299f8-87e7-4857-b449-0ba23d6c3997" />
+      <TestMethod codeBase="xunit-tests\bin\Debug\net10.0\Petstore.Xunit.dll" adapterTypeName="executor://xunit/VsTestRunner3/netcore/" className="PetstoreXunit.PetstoreTests" name="CheckOperation" />
+    </UnitTest>
+    <UnitTest name="PetstoreXunit.PetstoreTests.CheckOperation(caseId: &quot;placeOrder-negative&quot;)" storage="xunit-tests\bin\debug\net10.0\petstore.xunit.dll" id="46511a9d-e756-575b-5d10-3e6b513904c0">
+      <Execution id="4e270422-5e46-4c1e-88d3-026b93db954c" />
+      <TestMethod codeBase="xunit-tests\bin\Debug\net10.0\Petstore.Xunit.dll" adapterTypeName="executor://xunit/VsTestRunner3/netcore/" className="PetstoreXunit.PetstoreTests" name="CheckOperation" />
+    </UnitTest>
+    <UnitTest name="PetstoreXunit.PetstoreTests.CheckOperation(caseId: &quot;addPet-positive&quot;)" storage="xunit-tests\bin\debug\net10.0\petstore.xunit.dll" id="90ad0326-f779-dd7a-ed1d-ea33423cb81f">
+      <Execution id="2f93713a-9392-4fa9-9695-e516c3335b22" />
+      <TestMethod codeBase="xunit-tests\bin\Debug\net10.0\Petstore.Xunit.dll" adapterTypeName="executor://xunit/VsTestRunner3/netcore/" className="PetstoreXunit.PetstoreTests" name="CheckOperation" />
+    </UnitTest>
+    <UnitTest name="PetstoreXunit.PetstoreTests.CheckOperation(caseId: &quot;createUsersWithListInput-positive&quot;)" storage="xunit-tests\bin\debug\net10.0\petstore.xunit.dll" id="f963e329-c797-b9a6-201a-ced435c15b0c">
+      <Execution id="b5617b40-12aa-487d-b191-4705145ba5e3" />
+      <TestMethod codeBase="xunit-tests\bin\Debug\net10.0\Petstore.Xunit.dll" adapterTypeName="executor://xunit/VsTestRunner3/netcore/" className="PetstoreXunit.PetstoreTests" name="CheckOperation" />
+    </UnitTest>
+    <UnitTest name="PetstoreXunit.PetstoreTests.CheckOperation(caseId: &quot;deleteUser-negative&quot;)" storage="xunit-tests\bin\debug\net10.0\petstore.xunit.dll" id="bc9c2e9b-916d-4029-4eda-ee6755bdc388">
+      <Execution id="0fc7b0f1-6d3d-4be1-8cb7-d7d328029d7f" />
+      <TestMethod codeBase="xunit-tests\bin\Debug\net10.0\Petstore.Xunit.dll" adapterTypeName="executor://xunit/VsTestRunner3/netcore/" className="PetstoreXunit.PetstoreTests" name="CheckOperation" />
+    </UnitTest>
+    <UnitTest name="PetstoreXunit.PetstoreTests.CheckOperation(caseId: &quot;createUsersWithArrayInput-positive&quot;)" storage="xunit-tests\bin\debug\net10.0\petstore.xunit.dll" id="f1cd7002-cf35-328c-812d-c56d2fdfda5a">
+      <Execution id="d71d4b65-f979-4246-a7d9-5080481b8bf6" />
+      <TestMethod codeBase="xunit-tests\bin\Debug\net10.0\Petstore.Xunit.dll" adapterTypeName="executor://xunit/VsTestRunner3/netcore/" className="PetstoreXunit.PetstoreTests" name="CheckOperation" />
+    </UnitTest>
+    <UnitTest name="PetstoreXunit.PetstoreTests.CheckOperation(caseId: &quot;getInventory-negative&quot;)" storage="xunit-tests\bin\debug\net10.0\petstore.xunit.dll" id="dd97d126-d71b-6b07-d234-76e54adbf1bd">
+      <Execution id="6d9e70cb-62e7-44f7-bc0f-4c6ea519f9d2" />
+      <TestMethod codeBase="xunit-tests\bin\Debug\net10.0\Petstore.Xunit.dll" adapterTypeName="executor://xunit/VsTestRunner3/netcore/" className="PetstoreXunit.PetstoreTests" name="CheckOperation" />
+    </UnitTest>
+    <UnitTest name="PetstoreXunit.PetstoreTests.CheckOperation(caseId: &quot;loginUser-negative&quot;)" storage="xunit-tests\bin\debug\net10.0\petstore.xunit.dll" id="e4683ef4-13e7-6b6d-59bf-2026a2670d88">
+      <Execution id="20bc609a-f5fc-45cf-8973-20bf85c847f5" />
+      <TestMethod codeBase="xunit-tests\bin\Debug\net10.0\Petstore.Xunit.dll" adapterTypeName="executor://xunit/VsTestRunner3/netcore/" className="PetstoreXunit.PetstoreTests" name="CheckOperation" />
+    </UnitTest>
+    <UnitTest name="PetstoreXunit.PetstoreTests.CheckOperation(caseId: &quot;createUser-negative&quot;)" storage="xunit-tests\bin\debug\net10.0\petstore.xunit.dll" id="3d872ab0-e70b-9e0d-e79d-672710e5809d">
+      <Execution id="da97d497-3732-467f-9659-f684624dd275" />
+      <TestMethod codeBase="xunit-tests\bin\Debug\net10.0\Petstore.Xunit.dll" adapterTypeName="executor://xunit/VsTestRunner3/netcore/" className="PetstoreXunit.PetstoreTests" name="CheckOperation" />
+    </UnitTest>
+    <UnitTest name="PetstoreXunit.PetstoreTests.CheckOperation(caseId: &quot;getPetById-positive&quot;)" storage="xunit-tests\bin\debug\net10.0\petstore.xunit.dll" id="30842c32-223d-01f0-70ef-69771973781a">
+      <Execution id="f3af880e-9117-48ab-847d-ea94047917fc" />
+      <TestMethod codeBase="xunit-tests\bin\Debug\net10.0\Petstore.Xunit.dll" adapterTypeName="executor://xunit/VsTestRunner3/netcore/" className="PetstoreXunit.PetstoreTests" name="CheckOperation" />
+    </UnitTest>
+    <UnitTest name="PetstoreXunit.PetstoreTests.CheckOperation(caseId: &quot;uploadFile-negative&quot;)" storage="xunit-tests\bin\debug\net10.0\petstore.xunit.dll" id="9a798093-1972-9e66-f3fd-c54dca339879">
+      <Execution id="c45bdf6e-1a85-40c9-9e4b-896ffed25a9a" />
+      <TestMethod codeBase="xunit-tests\bin\Debug\net10.0\Petstore.Xunit.dll" adapterTypeName="executor://xunit/VsTestRunner3/netcore/" className="PetstoreXunit.PetstoreTests" name="CheckOperation" />
+    </UnitTest>
+  </TestDefinitions>
+  <TestEntries>
+    <TestEntry testId="14628c0a-c438-db60-5e45-e3792a42b7f9" executionId="098382de-c62a-4789-a1f3-ea34ad6dd8a8" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="9a798093-1972-9e66-f3fd-c54dca339879" executionId="c45bdf6e-1a85-40c9-9e4b-896ffed25a9a" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="2ddef042-8ad1-5bdb-40a9-f42ce1bbe62b" executionId="3b421459-218f-4113-941c-f714835a0430" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="8983aa58-81b5-b87a-0c57-11782e7c670d" executionId="c5aabdeb-0289-4674-ae09-38f553ea1750" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="a462beb0-be61-5729-9b32-b9ecb1056c30" executionId="9b2c9f3e-2898-4f3c-9c3a-6b94acc5bb89" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="c1a2d020-28ab-9ef5-2d7b-dfb51b2e0772" executionId="a07432aa-e01e-48e8-9ca3-3d71e5a34cd1" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="9682dc26-13f6-6583-c40a-87a2eb43aa26" executionId="4fed15a2-2663-4ce9-b2cd-90999fc89aa3" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="3d872ab0-e70b-9e0d-e79d-672710e5809d" executionId="da97d497-3732-467f-9659-f684624dd275" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="e1ad0452-1ee8-21e7-8c0e-925f6631d957" executionId="ea1ab2c3-130b-4b42-b1fc-7ec4ade6ce24" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="f299b7d9-16e3-a8f4-6cc2-9c681beb8810" executionId="32cd8489-4485-4a9a-98d4-ef878520f965" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="dd97d126-d71b-6b07-d234-76e54adbf1bd" executionId="6d9e70cb-62e7-44f7-bc0f-4c6ea519f9d2" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="51102316-10d6-f608-1e8b-e71244da6d1b" executionId="3013456c-345b-4f17-93ef-2fea78854fe9" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="1406d57c-1906-e35f-f0a2-8d8126a5814d" executionId="62955d05-f0d1-4221-aa9f-3bd17197d89d" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="8db98897-ba64-d3cd-3858-9fcc51a1f2b8" executionId="dc8d9a40-83ce-4c37-b161-61b9158c30e1" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="74615624-f618-c667-ea32-07b984649851" executionId="7c78d63b-a271-4cde-88f3-59ec92685304" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="9cbd7abd-7c9f-6aee-8eff-91f3f3e86516" executionId="0dc98b9c-c546-4ffb-be09-57233e73fe18" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="f2dc662e-fcc5-aa95-f81c-ee3349009bb7" executionId="521cbabf-8ae8-484e-98b6-bb77431576a4" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="9ff64f4c-0428-eeac-fbcd-3d03853f1bb6" executionId="08fc1af2-f6a7-4328-a524-bc2fac3bf5d2" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="7948cfdb-6467-7e13-7690-f1c722c836a4" executionId="79c299f8-87e7-4857-b449-0ba23d6c3997" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="1f0f1643-925f-e217-932f-d2d0d203be26" executionId="396ab291-9c15-4144-8ada-bb8a4ffb9a58" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="46511a9d-e756-575b-5d10-3e6b513904c0" executionId="4e270422-5e46-4c1e-88d3-026b93db954c" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="f1cd7002-cf35-328c-812d-c56d2fdfda5a" executionId="d71d4b65-f979-4246-a7d9-5080481b8bf6" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="254de509-14b8-9206-753a-67118aa99ac1" executionId="80dad058-05d7-4e58-92f6-c451b2e9e263" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="92f361d1-bfd0-9ac2-6ff1-7866526df765" executionId="c5e84d86-a0b6-4c87-9a52-669232d8a3b0" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="98e05ba3-125c-dc4e-2573-5d28098bb2fa" executionId="3ad36e22-4afa-494b-b590-b57f0ca54cfa" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="bc9c2e9b-916d-4029-4eda-ee6755bdc388" executionId="0fc7b0f1-6d3d-4be1-8cb7-d7d328029d7f" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="1c7fa0bc-85b1-44b7-d3b4-fb3d10f1e2b2" executionId="9e878061-4607-454e-b298-b09a43d9eeae" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="30842c32-223d-01f0-70ef-69771973781a" executionId="f3af880e-9117-48ab-847d-ea94047917fc" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="e4683ef4-13e7-6b6d-59bf-2026a2670d88" executionId="20bc609a-f5fc-45cf-8973-20bf85c847f5" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="54282663-d503-1a1c-4293-eece655727fa" executionId="d2236306-f1bf-45dc-9e3b-3e9629fc77fd" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="f963e329-c797-b9a6-201a-ced435c15b0c" executionId="b5617b40-12aa-487d-b191-4705145ba5e3" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="90ad0326-f779-dd7a-ed1d-ea33423cb81f" executionId="2f93713a-9392-4fa9-9695-e516c3335b22" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="b13e988e-4916-0e8f-6c81-068804ed0f29" executionId="54d90127-553d-487d-886f-f8bcbc676bd1" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="4e569c67-cbbb-8bee-0e88-1c83f239532d" executionId="e7e08846-58aa-4d0f-95f7-671a90d91446" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="f0d930d8-9839-79fb-722c-93d10e405521" executionId="035be884-3207-49eb-ab3d-36d639094f2e" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="468d9ad7-7107-878e-643a-262c3537ddc5" executionId="a1a0de85-d650-4ad2-abc4-bd81d4ceb77b" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="639e1db3-be68-26ff-b028-c6d1c09dbf0a" executionId="79d19057-729b-48b9-8daf-5c0f49284933" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="000ea5c9-e8a0-a24a-5bc4-5bf57dad5187" executionId="c01b13c6-4511-472c-88d1-9307189450bb" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+  </TestEntries>
+  <TestLists>
+    <TestList name="Results Not in a List" id="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestList name="All Loaded Results" id="19431567-8539-422a-85d7-44ee4e166bda" />
+  </TestLists>
+  <ResultSummary outcome="Failed">
+    <Counters total="38" executed="38" passed="27" failed="11" error="0" timeout="0" aborted="0" inconclusive="0" passedButRunAborted="0" notRunnable="0" notExecuted="0" disconnected="0" warning="0" completed="0" inProgress="0" pending="0" />
+    <Output>
+      <StdOut>[xUnit.net 00:00:00.00] xUnit.net VSTest Adapter v3.1.4+50e68bbb8b (64-bit .NET 10.0.14)&#xD;
+[xUnit.net 00:00:00.09]   Discovering: Petstore.Xunit&#xD;
+[xUnit.net 00:00:00.17]   Discovered:  Petstore.Xunit&#xD;
+[xUnit.net 00:00:00.21]   Starting:    Petstore.Xunit&#xD;
+[xUnit.net 00:00:00.90]       System.InvalidOperationException : Expected HTTP 400 or 401, got 200: {"code":200,"type":"unknown","message":"logged in user session:1794566287929"}&#xD;
+[xUnit.net 00:00:00.90]       Stack Trace:&#xD;
+[xUnit.net 00:00:00.90]         PetstoreCases.cs(89,0): at Petstore.PetstoreCases.RequireStatus(Result response, Int32[] expected)&#xD;
+[xUnit.net 00:00:00.90]         PetstoreCases.cs(31,0): at Petstore.PetstoreCases.Run(String testId)&#xD;
+[xUnit.net 00:00:00.90]         PetstoreCases.cs(48,0): at Petstore.PetstoreCases.Run(String testId)&#xD;
+[xUnit.net 00:00:00.90]         xunit-tests\PetstoreTests.cs(13,0): at PetstoreXunit.PetstoreTests.CheckOperation(String caseId)&#xD;
+[xUnit.net 00:00:00.90]         --- End of stack trace from previous location ---&#xD;
+[xUnit.net 00:00:01.85]       System.InvalidOperationException : Expected HTTP 400 or 405, got 500: {"code":500,"type":"unknown","message":"something bad happened"}&#xD;
+[xUnit.net 00:00:01.85]       Stack Trace:&#xD;
+[xUnit.net 00:00:01.85]         PetstoreCases.cs(89,0): at Petstore.PetstoreCases.RequireStatus(Result response, Int32[] expected)&#xD;
+[xUnit.net 00:00:01.85]         PetstoreCases.cs(31,0): at Petstore.PetstoreCases.Run(String testId)&#xD;
+[xUnit.net 00:00:01.85]         PetstoreCases.cs(48,0): at Petstore.PetstoreCases.Run(String testId)&#xD;
+[xUnit.net 00:00:01.85]         xunit-tests\PetstoreTests.cs(13,0): at PetstoreXunit.PetstoreTests.CheckOperation(String caseId)&#xD;
+[xUnit.net 00:00:01.85]         --- End of stack trace from previous location ---&#xD;
+[xUnit.net 00:00:05.53]       System.InvalidOperationException : Expected HTTP 406, got 500: &lt;html&gt;
+&lt;head&gt;
+&lt;meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/&gt;
+&lt;title&gt;Error 500 Server Error&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;&lt;h2&gt;HTTP ERROR 500&lt;/h2&gt;
+&lt;p&gt;Problem accessing /v2/store/inventory. Reason:
+&lt;pre&gt;    Server Error&lt;/pre&gt;&lt;/p&gt;&lt;h3&gt;Caused by:&lt;/h3&gt;&lt;pre&gt;javax.ws.rs.WebApplicationException:&#xD;
+[xUnit.net 00:00:05.53]       Stack Trace:&#xD;
+[xUnit.net 00:00:05.53]         PetstoreCases.cs(89,0): at Petstore.PetstoreCases.RequireStatus(Result response, Int32[] expected)&#xD;
+[xUnit.net 00:00:05.53]         PetstoreCases.cs(31,0): at Petstore.PetstoreCases.Run(String testId)&#xD;
+[xUnit.net 00:00:05.53]         PetstoreCases.cs(48,0): at Petstore.PetstoreCases.Run(String testId)&#xD;
+[xUnit.net 00:00:05.53]         xunit-tests\PetstoreTests.cs(13,0): at PetstoreXunit.PetstoreTests.CheckOperation(String caseId)&#xD;
+[xUnit.net 00:00:05.53]         --- End of stack trace from previous location ---&#xD;
+[xUnit.net 00:00:05.97]       System.InvalidOperationException : Expected HTTP 401 or 403, got 200: {"code":200,"type":"unknown","message":"ok"}&#xD;
+[xUnit.net 00:00:05.97]       Stack Trace:&#xD;
+[xUnit.net 00:00:05.97]         PetstoreCases.cs(89,0): at Petstore.PetstoreCases.RequireStatus(Result response, Int32[] expected)&#xD;
+[xUnit.net 00:00:05.97]         PetstoreCases.cs(31,0): at Petstore.PetstoreCases.Run(String testId)&#xD;
+[xUnit.net 00:00:05.97]         PetstoreCases.cs(48,0): at Petstore.PetstoreCases.Run(String testId)&#xD;
+[xUnit.net 00:00:05.97]         xunit-tests\PetstoreTests.cs(13,0): at PetstoreXunit.PetstoreTests.CheckOperation(String caseId)&#xD;
+[xUnit.net 00:00:05.97]         --- End of stack trace from previous location ---&#xD;
+[xUnit.net 00:00:07.18]       System.InvalidOperationException : Expected HTTP 400, got 200: []&#xD;
+[xUnit.net 00:00:07.18]       Stack Trace:&#xD;
+[xUnit.net 00:00:07.18]         PetstoreCases.cs(89,0): at Petstore.PetstoreCases.RequireStatus(Result response, Int32[] expected)&#xD;
+[xUnit.net 00:00:07.18]         PetstoreCases.cs(31,0): at Petstore.PetstoreCases.Run(String testId)&#xD;
+[xUnit.net 00:00:07.18]         PetstoreCases.cs(48,0): at Petstore.PetstoreCases.Run(String testId)&#xD;
+[xUnit.net 00:00:07.18]         xunit-tests\PetstoreTests.cs(13,0): at PetstoreXunit.PetstoreTests.CheckOperation(String caseId)&#xD;
+[xUnit.net 00:00:07.18]         --- End of stack trace from previous location ---&#xD;
+[xUnit.net 00:00:09.91]       System.InvalidOperationException : Expected HTTP 400 or 405, got 500: {"code":500,"type":"unknown","message":"something bad happened"}&#xD;
+[xUnit.net 00:00:09.91]       Stack Trace:&#xD;
+[xUnit.net 00:00:09.91]         PetstoreCases.cs(89,0): at Petstore.PetstoreCases.RequireStatus(Result response, Int32[] expected)&#xD;
+[xUnit.net 00:00:09.91]         PetstoreCases.cs(31,0): at Petstore.PetstoreCases.Run(String testId)&#xD;
+[xUnit.net 00:00:09.91]         PetstoreCases.cs(48,0): at Petstore.PetstoreCases.Run(String testId)&#xD;
+[xUnit.net 00:00:09.91]         xunit-tests\PetstoreTests.cs(13,0): at PetstoreXunit.PetstoreTests.CheckOperation(String caseId)&#xD;
+[xUnit.net 00:00:09.91]         --- End of stack trace from previous location ---&#xD;
+[xUnit.net 00:00:10.45]       System.InvalidOperationException : Expected HTTP 400, got 500: {"code":500,"type":"unknown","message":"something bad happened"}&#xD;
+[xUnit.net 00:00:10.45]       Stack Trace:&#xD;
+[xUnit.net 00:00:10.45]         PetstoreCases.cs(89,0): at Petstore.PetstoreCases.RequireStatus(Result response, Int32[] expected)&#xD;
+[xUnit.net 00:00:10.45]         PetstoreCases.cs(31,0): at Petstore.PetstoreCases.Run(String testId)&#xD;
+[xUnit.net 00:00:10.45]         PetstoreCases.cs(48,0): at Petstore.PetstoreCases.Run(String testId)&#xD;
+[xUnit.net 00:00:10.45]         xunit-tests\PetstoreTests.cs(13,0): at PetstoreXunit.PetstoreTests.CheckOperation(String caseId)&#xD;
+[xUnit.net 00:00:10.45]         --- End of stack trace from previous location ---&#xD;
+[xUnit.net 00:00:12.62]       System.InvalidOperationException : Expected HTTP 400 or 405, got 500: {"code":500,"type":"unknown","message":"something bad happened"}&#xD;
+[xUnit.net 00:00:12.62]       Stack Trace:&#xD;
+[xUnit.net 00:00:12.62]         PetstoreCases.cs(89,0): at Petstore.PetstoreCases.RequireStatus(Result response, Int32[] expected)&#xD;
+[xUnit.net 00:00:12.62]         PetstoreCases.cs(31,0): at Petstore.PetstoreCases.Run(String testId)&#xD;
+[xUnit.net 00:00:12.62]         PetstoreCases.cs(48,0): at Petstore.PetstoreCases.Run(String testId)&#xD;
+[xUnit.net 00:00:12.62]         xunit-tests\PetstoreTests.cs(13,0): at PetstoreXunit.PetstoreTests.CheckOperation(String caseId)&#xD;
+[xUnit.net 00:00:12.62]         --- End of stack trace from previous location ---&#xD;
+[xUnit.net 00:00:17.08]       System.InvalidOperationException : Expected HTTP 400 or 405, got 500: {"code":500,"type":"unknown","message":"something bad happened"}&#xD;
+[xUnit.net 00:00:17.08]       Stack Trace:&#xD;
+[xUnit.net 00:00:17.08]         PetstoreCases.cs(89,0): at Petstore.PetstoreCases.RequireStatus(Result response, Int32[] expected)&#xD;
+[xUnit.net 00:00:17.08]         PetstoreCases.cs(31,0): at Petstore.PetstoreCases.Run(String testId)&#xD;
+[xUnit.net 00:00:17.08]         PetstoreCases.cs(48,0): at Petstore.PetstoreCases.Run(String testId)&#xD;
+[xUnit.net 00:00:17.08]         xunit-tests\PetstoreTests.cs(13,0): at PetstoreXunit.PetstoreTests.CheckOperation(String caseId)&#xD;
+[xUnit.net 00:00:17.08]         --- End of stack trace from previous location ---&#xD;
+[xUnit.net 00:00:20.48]       System.InvalidOperationException : Expected HTTP 400 or 405, got 500: {"code":500,"type":"unknown","message":"something bad happened"}&#xD;
+[xUnit.net 00:00:20.48]       Stack Trace:&#xD;
+[xUnit.net 00:00:20.48]         PetstoreCases.cs(89,0): at Petstore.PetstoreCases.RequireStatus(Result response, Int32[] expected)&#xD;
+[xUnit.net 00:00:20.48]         PetstoreCases.cs(31,0): at Petstore.PetstoreCases.Run(String testId)&#xD;
+[xUnit.net 00:00:20.48]         PetstoreCases.cs(48,0): at Petstore.PetstoreCases.Run(String testId)&#xD;
+[xUnit.net 00:00:20.48]         xunit-tests\PetstoreTests.cs(13,0): at PetstoreXunit.PetstoreTests.CheckOperation(String caseId)&#xD;
+[xUnit.net 00:00:20.48]         --- End of stack trace from previous location ---&#xD;
+[xUnit.net 00:00:21.02]       System.InvalidOperationException : Expected HTTP 400 or 405, got 500: {"code":500,"type":"unknown","message":"something bad happened"}&#xD;
+[xUnit.net 00:00:21.02]       Stack Trace:&#xD;
+[xUnit.net 00:00:21.02]         PetstoreCases.cs(89,0): at Petstore.PetstoreCases.RequireStatus(Result response, Int32[] expected)&#xD;
+[xUnit.net 00:00:21.02]         PetstoreCases.cs(31,0): at Petstore.PetstoreCases.Run(String testId)&#xD;
+[xUnit.net 00:00:21.02]         PetstoreCases.cs(48,0): at Petstore.PetstoreCases.Run(String testId)&#xD;
+[xUnit.net 00:00:21.02]         xunit-tests\PetstoreTests.cs(13,0): at PetstoreXunit.PetstoreTests.CheckOperation(String caseId)&#xD;
+[xUnit.net 00:00:21.02]         --- End of stack trace from previous location ---&#xD;
+[xUnit.net 00:00:22.10]   Finished:    Petstore.Xunit&#xD;
+</StdOut>
+    </Output>
+    <RunInfos>
+      <RunInfo  outcome="Error" timestamp="2026-11-13T13:38:08.0474182+03:00">
+        <Text>[xUnit.net 00:00:00.90]     PetstoreXunit.PetstoreTests.CheckOperation(caseId: "loginUser-negative") [FAIL]</Text>
+      </RunInfo>
+      <RunInfo  outcome="Error" timestamp="2026-11-13T13:38:08.9982240+03:00">
+        <Text>[xUnit.net 00:00:01.85]     PetstoreXunit.PetstoreTests.CheckOperation(caseId: "updateUser-negative") [FAIL]</Text>
+      </RunInfo>
+      <RunInfo  outcome="Error" timestamp="2026-11-13T13:38:12.6799686+03:00">
+        <Text>[xUnit.net 00:00:05.53]     PetstoreXunit.PetstoreTests.CheckOperation(caseId: "getInventory-negative") [FAIL]</Text>
+      </RunInfo>
+      <RunInfo  outcome="Error" timestamp="2026-11-13T13:38:13.1107784+03:00">
+        <Text>[xUnit.net 00:00:05.97]     PetstoreXunit.PetstoreTests.CheckOperation(caseId: "logoutUser-negative") [FAIL]</Text>
+      </RunInfo>
+      <RunInfo  outcome="Error" timestamp="2026-11-13T13:38:14.3292687+03:00">
+        <Text>[xUnit.net 00:00:07.18]     PetstoreXunit.PetstoreTests.CheckOperation(caseId: "findPetsByStatus-negative") [FAIL]</Text>
+      </RunInfo>
+      <RunInfo  outcome="Error" timestamp="2026-11-13T13:38:17.0535043+03:00">
+        <Text>[xUnit.net 00:00:09.91]     PetstoreXunit.PetstoreTests.CheckOperation(caseId: "addPet-negative") [FAIL]</Text>
+      </RunInfo>
+      <RunInfo  outcome="Error" timestamp="2026-11-13T13:38:17.5910517+03:00">
+        <Text>[xUnit.net 00:00:10.45]     PetstoreXunit.PetstoreTests.CheckOperation(caseId: "placeOrder-negative") [FAIL]</Text>
+      </RunInfo>
+      <RunInfo  outcome="Error" timestamp="2026-11-13T13:38:19.7649367+03:00">
+        <Text>[xUnit.net 00:00:12.62]     PetstoreXunit.PetstoreTests.CheckOperation(caseId: "updatePet-negative") [FAIL]</Text>
+      </RunInfo>
+      <RunInfo  outcome="Error" timestamp="2026-11-13T13:38:24.2252442+03:00">
+        <Text>[xUnit.net 00:00:17.08]     PetstoreXunit.PetstoreTests.CheckOperation(caseId: "createUsersWithListInput-negative") [FAIL]</Text>
+      </RunInfo>
+      <RunInfo  outcome="Error" timestamp="2026-11-13T13:38:27.6245736+03:00">
+        <Text>[xUnit.net 00:00:20.48]     PetstoreXunit.PetstoreTests.CheckOperation(caseId: "createUsersWithArrayInput-negative") [FAIL]</Text>
+      </RunInfo>
+      <RunInfo  outcome="Error" timestamp="2026-11-13T13:38:28.1629376+03:00">
+        <Text>[xUnit.net 00:00:21.02]     PetstoreXunit.PetstoreTests.CheckOperation(caseId: "createUser-negative") [FAIL]</Text>
+      </RunInfo>
+    </RunInfos>
+  </ResultSummary>
+</TestRun>
